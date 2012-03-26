@@ -1,0 +1,43 @@
+{
+    "name": "Hello World",
+    "description": "A hello world template.",
+    "version": "1.0",
+    "devices": [
+        "iPhone",
+        "Android"
+    ],
+    "platformConfig": {
+        "android": {
+            "nativeNavigation": "true"
+        },
+        "iOS": {
+            "nativeNavigation": "true"
+        }
+    },
+    "views": [
+        {
+            "navigationTitle": "Hello",
+            "navigationIcon": "images/icons/hello.png",
+            "uri": "html/hello.html"
+        },
+        {
+            "navigationTitle": "Videos",
+            "navigationIcon": "images/icons/videos.png",
+            "uri": "html/videos.html",
+            "data": [
+                {
+                    "name": "videos",
+                    "contentConnector": "4e7c8f9e1f19987e1c003ec4",
+                    "type": "video_cloud"
+                }
+            ],
+            "settings": [
+                {
+                    "name": "playerURL",
+                    "type": "string",
+                    "value": "Paste your Brightcove player URL here."
+                }
+            ]
+        }
+    ]
+}
